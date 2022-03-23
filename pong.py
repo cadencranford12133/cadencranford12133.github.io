@@ -13,13 +13,13 @@ wall_width, wall_height = .5, 5
 border_width, border_height = 40, .5
 
 pong = trtl.Turtle()
-pong.up()
+pong.penup()
 pong.shape('circle')
 pong.color('black')
 pong.shapesize(float(.5))
 
 wall4= trtl.Turtle
-wall4.up()
+wall4.penup()
 wall4.shape('square')
 wall4.color('blue')
 wall4.shapesize(wall_width, wall_height)
@@ -29,7 +29,7 @@ wall4.seth(90)
 
 
 wall3= trtl.Turtle
-wall3.up()
+wall3.penup()
 wall3.shape('square')
 wall3.color('blue')
 wall3.shapesize(wall_width, wall_height)
@@ -38,7 +38,7 @@ wall3.seth(90)
 
 
 wall2 = trtl.Turtle()
-wall2.up()
+wall2.penup()
 wall2.shape('square')
 wall2.color('blue')
 wall2.shapesize(wall_width, wall_height)
@@ -46,7 +46,7 @@ wall2.goto(-350, 0)
 wall2.seth(90)
 
 wall1 = trtl.Turtle()
-wall1.up()
+wall1.penup()
 wall1.shape('square')
 wall1.color('red')
 wall1.shapesize(wall_width, wall_height)
@@ -54,7 +54,7 @@ wall1.goto(350, 0)
 wall1.seth(90)
 
 top_border = trtl.Turtle()
-top_border.up()
+top_border.penup()
 top_border.shape('square')
 top_border.color('white')
 top_border.shapesize(border_width, border_height)
@@ -62,7 +62,7 @@ top_border.goto(0, -300)
 top_border.seth(90)
 
 bttm_border = trtl.Turtle()
-bttm_border.up()
+bttm_border.penup()
 bttm_border.shape('square')
 bttm_border.color('white')
 bttm_border.shapesize(border_width, border_height)
