@@ -127,6 +127,19 @@ def funbutton():
             scorecount2.write(bluescore, font=font_setup)
             reset()
 
+#endgame
+endgame = trtl.Turtle()
+wall1.st()
+wall2.st()
+pong.st()
+top_border.st()
+run_pong()
+
+
+
+
+
+
 # start button
 strtbttn = "StartButton.gif"
 wn.addshape(strtbttn)
@@ -194,3 +207,4 @@ wn.onkeypress(stort, "space")
 wn.onkeypress(reset, "r")
 wn.listen()
 wn.mainloop()
+wn.onkeypress(endgame,"e")
