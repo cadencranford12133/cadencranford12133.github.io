@@ -21,4 +21,14 @@ message_input = tk.Entry(
 )
 message_input.grid(row=0,column=1,sticky=(tk.N,tk.E,tk.W,tk.S),padx=10)
 
+#row 2
+encoded_Label = tk.Label(
+    root,
+    text= 'Enter an message to encode:',
+    font=('arial 16 bold'),
+    bg='green',
+    fg='#FF0'
+)
+
+
 root.mainloop()
