@@ -114,6 +114,8 @@ def dn():
 def reset():
     pong.goto(0, 0)
     pong.seth(0)
+    wall1.goto(350, 0)
+    wall2.goto(-350, 0)
 def bugfix():
     pong.seth(Rand.randint(0, 360))
 def funbutton():
@@ -175,9 +177,6 @@ def run_pong():
             if pong.ycor() + wall1.ycor() == 0.0:
                 angle = 180
                 pong.seth(angle)
-            elif angle == 0.0:
-                angle = 180
-                pong.seth(angle)
             else:
                 angle = Rand.randint(135, 225)
                 pong.seth(angle)
@@ -187,7 +186,7 @@ def run_pong():
                 angle = 0.0
                 pong.seth(angle)
             else:
-                angle = Rand.randint(45, 315)
+                angle = Rand.randint(-45, 45)
                 pong.seth(angle)
             print(angle)
         if hrzntl_brdr_colide(pong, top_border):
