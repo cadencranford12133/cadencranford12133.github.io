@@ -13,7 +13,7 @@ message_Label = tk.Label(
     bg='red',
     fg='#FF0'
 )
-message_Label.grid(row=0,column=0)
+message_Label.grid(row=0,column=0,sticky=(tk.W),padx=25)
 message_var = tk.StringVar(root) # holds the text from message _input
 message_input = tk.Entry(
     root,
@@ -24,11 +24,11 @@ message_input.grid(row=0,column=1,sticky=(tk.N,tk.E,tk.W,tk.S),padx=10)
 #row 2
 encoded_Label = tk.Label(
     root,
-    text= 'EYour encoded messege is here:',
+    text= 'Your encoded messege is here:',
     font=('arial 16 bold'),
     bg='green',
     fg='pink'
 )
-encoded_Label.grid(row=1,column=0)
+encoded_Label.grid(row=1,column=0,sticky=(tk.W),padx=25)
 
 root.mainloop()
