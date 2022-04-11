@@ -35,7 +35,13 @@ encoded_input = tk.Entry(
     root,
     textvariable=encoded_var
 )
-encoded_input.grid(row=0,column=1,sticky=(tk.N,tk.E,tk.W,tk.S),padx=10)encoded_var = tk.StringVar(root) # holds the text from message _input
+encoded_input.grid(row=1,column=1,sticky=(tk.N,tk.E,tk.W,tk.S),padx=10)
 
+#row 3
+submit_btn = tk.Button(
+    root,
+    text='Encode'
+)
+submit_btn.grid(row=2,column=1,sticky=(tk.E),padx=10,pady=10)
 
 root.mainloop()
