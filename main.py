@@ -1,5 +1,4 @@
-from base64 import encode
-from email import message
+
 import tkinter as tk
 
 root = tk.Tk()
@@ -21,6 +20,6 @@ message_input = tk.Entry(
     root,
     textvariable=message_var
 )
-message_input.grid(row=0,column=1,sticky=(tk.N,tk.E,tk.W,tk.S),padx=)
+message_input.grid(row=0,column=1,sticky=(tk.N,tk.E,tk.W,tk.S),padx=10)
 
 root.mainloop()
