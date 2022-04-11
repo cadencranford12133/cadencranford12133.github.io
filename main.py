@@ -15,4 +15,11 @@ message_Label = tk.Label(
     fg='#FF0'
 )
 message_Label.grid(row=0,column=0)
+message_var = tk.StringVar(root) # holds the text from message _input
+message_input = tk.Entry(
+    root,
+    textvariable=message_var
+)
+message_input.grid(row=0,column=0)
+
 root.mainloop()
