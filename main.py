@@ -27,8 +27,15 @@ encoded_Label = tk.Label(
     text= 'Your encoded messege is here:',
     font=('arial 16 bold'),
     bg='green',
-    fg='pink'
+    fg='white'
 )
 encoded_Label.grid(row=1,column=0,sticky=(tk.W),padx=25)
+encoded_var = tk.StringVar(root) # holds the text from message _input
+encoded_input = tk.Entry(
+    root,
+    textvariable=encoded_var
+)
+encoded_input.grid(row=0,column=1,sticky=(tk.N,tk.E,tk.W,tk.S),padx=10)encoded_var = tk.StringVar(root) # holds the text from message _input
+
 
 root.mainloop()
