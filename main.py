@@ -1,5 +1,12 @@
 import tkinter as tk
 
+def on_submit():
+    message = message_var.get()
+    if message =='':
+        return
+    print(message)
+
+
 root = tk.Tk()
 root.title('Caesar Cipher')
 root.geometry('600x600')
@@ -13,7 +20,7 @@ message_Label = tk.Label(
     bg='red',
     fg='#FF0'
 )
-message_Label.grid(row=0,column=0,sticky=(tk.W),padx=25)
+message_Label.grid(row=0,column=0,sticky=(tk.W,tk.E),padx=25)
 message_var = tk.StringVar(root) # holds the text from message _input
 message_input = tk.Entry(
     root,
@@ -29,7 +36,7 @@ encoded_Label = tk.Label(
     bg='green',
     fg='white'
 )
-encoded_Label.grid(row=1,column=0,sticky=(tk.W),padx=25)
+encoded_Label.grid(row=1,column=0,sticky=(tk.W,tk.E),padx=25)
 encoded_var = tk.StringVar(root) # holds the text from message _input
 encoded_input = tk.Entry(
     root,
@@ -43,5 +50,5 @@ submit_btn = tk.Button(
     text='Encode'
 )
 submit_btn.grid(row=2,column=1,sticky=(tk.E),padx=10,pady=10)
-
+submit_btn.configure(command=on_submit)
 root.mainloop()
